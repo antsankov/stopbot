@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="./assets/base.css">
     <link rel="stylesheet" href="./assets/skeleton.css">
-    <link rel="stylesheet" href="./assets/fork.css" />
     <link rel='icon' href='./favicon.ico' type='image/x-icon'/>
+    <link href="https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables/dist/js/tabulator.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57895312-1"></script>
     <script>
@@ -17,33 +18,14 @@
       gtag('js', new Date());
       gtag('config', 'UA-57895312-1');
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
-    <script>
-    var setVanta = ()=>{
-    if (window.VANTA) window.VANTA.TRUNK({
-      el: "#container",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      spacing: 4.50,
-      chaos: 4.00
-    })
-    }
-    setVanta()
-    </script>
     <!-- END GA -->
   </head>
     <a class="github-fork-ribbon left-bottom fixed" href="https://github.com/antsankov/antsankov.com" target="_blank" data-ribbon="Fork this page!" title="Fork this page!">Fork this Page!</a>
     <div class="container">
       <div class="sixteen columns">
-        <h1 style="margin-top: 40px" class="remove-bottom">antsankov.com</h1>
-        <h5>Hello, this is Alex Tsankov!</h5>
+        <h1 style="margin-top: 40px" class="remove-bottom">Stopbots</h1>
         <hr>
+        <div id="example-table"></div>
       </div>
       <div class="one-third column">
         <h3>About</h3>
@@ -166,4 +148,5 @@
         <a href="https://github.com/antsankov/antsankov.com">Site Source Code</a> - Served without Javascript or external CSS.
       </div>
     </div>  
-</body></html>
+</html>
+<script type="text/javascript" src="./assets/table-data.js"></script>
